@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: "sidebar header header"
+    "sidebar content content"
+    "sidebar content content";
+}
+
+.sidebar{
+    grid-area: sidebar;
+    box-shadow: inset -3px 0 20px -5px #888;
+
+}
+
+.sidebar ul{
+    display: grid;
+    grid-gap: 20px;
+    height: 50vh;
+    align-items: center;
+}
+
+.active{
+    background-color: #D0E0ED;  
+    border-left: 2px solid #3066BC;
+    width: 150px;
+    height: 85px;
+    text-align: center;
+    justify-content: center;
+}
+
+.inactive{
+    text-align: center;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 10%;
+    color: #8799AD;
+    display: inline-flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header{
+    grid-area: header;
+    background-color:white;
+}
+
+.content{
+    grid-area: content;
+    background-color: #F4F5F7;
+    padding:  30px;
+    
+}
+
+.icons{
+    height: 6vh;
+    width: 6vh;
+    margin-top: 10px;
+    margin-left: 3px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1{
+    font-size: 18px !important; 
+    color: #7992ab !important;
+    padding-left: 5px !important;
+    font-weight: bold !important;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: inline-block;
+    border: none;
+  }
+
+.center{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.upload{
+    padding: 20px 20px;
+    margin-left: 10%;
+    margin-top: 40px;
+    height: 40%;
+    width: 18%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+.logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selected{
+    color: black;
+}
